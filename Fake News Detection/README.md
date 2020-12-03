@@ -1,4 +1,6 @@
 ﻿# Fishing the Reals from the Fakes
+ 
+Note: Before jumping into the code, do read the poster and report to gain a better understanding of what we are trying to do. Simply reading the code straight might be a bit mind boggling. 
 
 ## Contents
 
