@@ -1,10 +1,12 @@
 # Data Science Portfolio
 A repository containing all the data science projects completed by me thus far in academic and self-learning settings. Hope you can take something away from them!
+Most, if not all, will contain some form of data cleaning, manipulation, visualization. Under each project, I'll just include techniques that separate ones one project from the other. If no additional techinques are included, then it's safe to assume that it's pretty must just cleaning, manipulation and visualization. 
 
 ## Python
-- [Suicide And Economy](): All societies have different problems. When things go wrong, some people end it for themselves. How does this phenomenon vary from society to society?
+- [Suicide And Economy](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Suicide%20And%20Economy/Suicide%20And%20Economy.ipynb): All societies have different problems. When things go wrong, some people end it for themselves. How does this phenomenon vary from society to society?
+  - Additional skills: Prediction using linear regression
 - [Carousell Analytics](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Carousell%20Analytics/Carousell%20Analytics.ipynb): Ever wondered how Carousell is performing at a certain point in time? How would we know without a dataset? We create our own!
-  - Techniques: Web scraping, Data cleaning, Data manipulation, Data visualization, Regression Modelling
+  - Techniques: Web scraping, Regression RMSE comparison 
 - [Fake News Detection](): In a modernizing society that rapidly generates content online, can we accurately tell fake from true news apart?
 
 ## R (coming soon)
