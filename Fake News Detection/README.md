@@ -1,18 +1,12 @@
 ﻿# Fishing the Reals from the Fakes
 
-Please refer to the following for a brief description of the files we have submitted.
+## Contents
 
-## Files submitted
-
-1. Report
-2. Datasets
-3. Notebooks
-4. Results
-
-
-## Report
-
-The report is a detailed summary of our project aims, our experiments and findings. For your convenience, yellow highlights are new changes that we have explored since the poster presentation.
+1. Datasets: Data that we used for the project
+2. Notebooks: Notebooks containing all our code 
+3. Results: Record of all results from our experiments
+4. Report: In here you can find my team's formally documented insights  
+5. Poster: My team's poster containing insights from our preliminary results 
 
 
 ## Datasets
@@ -22,7 +16,6 @@ Fake.csv and True.csv - Original unprocessed data from ISOT.
 news_final.csv - Combined data, with some preprocessing such as removal of stop words and lowercasing all characters.
 SR_combined.csv - Combined data, with the additional removal of source "Reuters".
 truncated_combined.csv - Combined data, in which 'text' field has been limited to only 150 words.
-
 
 
 ## Notebooks
@@ -65,3 +58,14 @@ These are the f1-scores we have obtained, running the models on TF-IDF text-vect
 
 **results_tfidf_text_comparison_fbeta.npy**
 These are the f-beta scores we have obtained, running the models on TF-IDF text-vectorisation and only the 'text' field. 
+
+
+
+## Report
+
+The report is a detailed summary of our project aims, our experiments and findings
+
+
+## Poster 
+
+The poster is a brief overview of our project's preliminary findings
