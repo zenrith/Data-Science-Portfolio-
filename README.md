@@ -1,5 +1,5 @@
 # Data Science Portfolio
-A repository containing all the data science projects completed by me thus far in academic and self-learning settings. 
+A repository containing all my personal data science projects
 
 Most, if not all, will contain some form of data cleaning, manipulation, visualization. Under each project, I'll just include techniques that separate ones one project from the other. If no additional techinques are included, then it's safe to assume that it's pretty must just cleaning, manipulation and visualization. 
 
