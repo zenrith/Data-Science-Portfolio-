@@ -11,7 +11,7 @@ Hope you can take something away from them!
 - [Carousell Analytics](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Carousell%20Analytics/Carousell%20Analytics.ipynb): Ever wondered how Carousell is performing at a certain point in time? How would we know without a dataset? We create our own!
   - Techniques: Web scraping, Regression  
 - [Fake News Detection](https://github.com/zenrith/Data-Science-Portfolio-/tree/main/Fake%20News%20Detection): In a modernizing society that rapidly generates content online, can we accurately tell fake from true news apart? This was a project from my school's Machine Learning class, NUS CS3244. My partner and I was in charge of doing the preparation / cleaning / modelling of data. Personally, I handled the modelling that involved TFIDF vectorization, while my partner did modelling that involved Word2Vec. 
-  - Techniques: Text processing, Classifiers 
+  - Techniques: Text processing, Classification
 
 ## R (coming soon)
 
