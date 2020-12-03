@@ -10,8 +10,8 @@ Hope you can take something away from them!
   - Techniques: Linear regression
 - [Carousell Analytics](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Carousell%20Analytics/Carousell%20Analytics.ipynb): Ever wondered how Carousell is performing at a certain point in time? How would we know without a dataset? We create our own!
   - Techniques: Web scraping, Regression  
-- [Fake News Detection](): In a modernizing society that rapidly generates content online, can we accurately tell fake from true news apart?
-  - Techniques: 
+- [Fake News Detection](https://github.com/zenrith/Data-Science-Portfolio-/tree/main/Fake%20News%20Detection/Notebooks): In a modernizing society that rapidly generates content online, can we accurately tell fake from true news apart?
+  - Techniques: TFIDF vectorization, Word2Vec embeddings, Classifiers 
 
 ## R (coming soon)
 
