@@ -1,0 +1,82 @@
+```{r}
+library(tidyverse)
+library(stringr)
+library(lubridate)
+
+retail <- readRDS("../data/retail_clean.rds")
+coords <- readRDS("../data/cty_coords.rds")
+features <- readRDS("../data/cust_features.rds")
+descriptions <- readLines("../data/column_description.txt")
+```
+```{r fig.height = 5, fig.width = 7, fig.align = "center"}
+summary(retail$InvoiceDate) 
+# invoice dates extends from 1 year from 2010/12 to 2011/12. plot is inaccurate because it omits 
+# the month before Jan 2011. 
+# good: no unnecessary colour, axes not manipulated to look larger / smaller
+# bad: since it's time series data, we can use line plots instead of barplot. bars may be considered
+# unnecessary in this case 
+
+monthly_rev <- retail %>%
+  mutate(InvoiceDate, ym = strftime(InvoiceDate, "%Y-%m")) %>%
+  group_by(ym) %>% 
+  summarise(revenue = sum(UnitPrice*Quantity) / 1000, 
+            num_days = as.numeric(max(InvoiceDate) - min(InvoiceDate)), .groups = "drop") %>%
+  mutate(project = c("yes", rep("no", 11), "yes"), 
+         projected = ifelse(project == "yes", revenue / num_days * 31, revenue))
+
+ggplot(monthly_rev) +
+  geom_point(mapping = aes(ym, projected, colour = project)) + 
+  scale_color_manual(values = c("yes" = "red", "no" = "black")) +
+  geom_line(mapping = aes(ym, projected, group = 1)) + 
+  labs(title = "Monthly revenue", x= "Year/Month", y = "Revenue", 
+       subtitle = "Decembers are projected") +
+  theme(legend.position = "blank")
+
+```
+```{r fig.height = 5, fig.width = 7, fig.align = "center"}
+christmas <- function(description) {
+  str_detect(description, "(CHRISTMAS|XMAS|SANTA|REINDEER)")
+}
+christmas_item_track <- mutate(retail, Date = date(InvoiceDate), christmas_item = ifelse(christmas(Description), 1, 0)) %>%
+  group_by(Date) %>%
+  summarise(num_items = sum(christmas_item), .groups = "drop")
+ggplot(christmas_item_track) + 
+  geom_line(mapping = aes(x = Date, y = num_items)) +
+  labs(title = "Christmas items trend", y = "Christmas items purchased")
+
+# christmas shopping seems to begin from early july
+```
+```{r fig.height = 5, fig.width = 10, fig.align = "center"}
+third_quarter <- mutate(retail, InvoiceDate, month = month(InvoiceDate)) %>%
+  filter(between(month, 7, 9)) %>%
+  group_by(Country) %>%
+  summarise(Revenue = sum(Quantity * UnitPrice), .groups = "drop")
+  
+
+coord_revenue <- filter(coords, group == "Asia") %>%
+  left_join(third_quarter, by = c("rtl" = "Country")) %>%
+  filter(!is.na(Revenue)) %>%
+  mutate(rev_round = round(Revenue, digits = -3),
+         rtl = recode(rtl, "United Arab Emirates" = "UAE"), 
+         rev_round = paste(rtl, ",", " ", str_sub(rev_round, 1, -4), "K", sep = ""))
+
+
+ggplot(coord_revenue) + 
+  geom_point(mapping = aes(x = long, y = lat, size = Revenue), color = "blue2") +
+  geom_text(mapping = aes(x = long, y = lat, label = rev_round), hjust = c(c(1.2, -.2, 1.1, -.1, -.2))) + 
+  labs(title = "Revenue from Asian Countries, Q3 2011", x = "Longitude", y = "Latitude") 
+```
+```{r fig.height = 5, fig.width = 11, fig.align = "center"}
+# what is the median number of unique items purchased per invoice in every grp? 
+med_unique_items <- filter(features, grp2 != "NA") %>%
+  group_by(grp2, Country) %>%
+  summarise(med_unique = median(m_uq), .groups = "drop") %>%
+  mutate(Country = reorder(Country, med_unique))
+ggplot(med_unique_items) +
+  geom_col(mapping = aes(Country, med_unique, fill = grp2)) + 
+  coord_flip() +
+  labs(title = "Median unique purchases per invoice in countries", y = "Median unique purchases per invoice")
+ 
+```
+
+
