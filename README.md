@@ -15,6 +15,8 @@ Hope you can take something away from them!
 
 ## R 
 - [Retail Trends](https://rpubs.com/zenrith/Retail_Trends): Can we see how a particular retail company is doing across the globe? The dataset is from my Data Visualization class. The analyses presented are a mix of what I've done in class and an addition of my take on exploring the data.
+- [Cars Correlation](https://rpubs.com/zenrith/Cars_Correlation): If I wanted a car that was out of stock at the moment, could I find the next best alternative without knowing how to judge a car? 
+  - Techniques: Dimensionality reduction
 
 
 ## Python and R (coming soon) 
