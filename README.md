@@ -14,7 +14,7 @@ Hope you can take something away from them!
   - Techniques: Text processing, Classification
 
 ## R 
-- [Retail Trends] (https://rpubs.com/zenrith/Retail_Trends): Can we see how a particular retail company is doing across the globe? The dataset is from my Data Visualization class. The analyses presented are a mix of what I've done in class and an addition of my take on exploring the data.
+- [Retail Trends](https://rpubs.com/zenrith/Retail_Trends): Can we see how a particular retail company is doing across the globe? The dataset is from my Data Visualization class. The analyses presented are a mix of what I've done in class and an addition of my take on exploring the data.
 
 
 ## Python and R (coming soon) 
