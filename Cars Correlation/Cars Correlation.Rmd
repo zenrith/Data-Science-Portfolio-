@@ -1,0 +1,60 @@
+---
+title: "Cars Correlation"
+---
+
+```{r message = FALSE}
+library(MASS)
+library(cluster)
+library(tidyverse)
+data(Cars93)
+```
+
+### If we wanted to see how all our observations of cars are related, can we? 
+
+```{r fig.align = "center", fig.height = 5, fig.width = 8, message = FALSE}
+reduced_cols <- data.frame(sammon(daisy(Cars93), k = 2)$points) %>%
+  mutate(make = Cars93$Make, origin = Cars93$Origin)
+ggplot(reduced_cols) + 
+  geom_text(mapping = aes(x = X1, y = X2, label = make, colour = origin)) 
+```
+
+We don't know what `X1` and `X2` are, but we do know that they linearly separate by origin!
+
+### Say I've been transported back in time and I wanted to find a particular car, but it's not selling anymore. What could be next alternative be? 
+
+```{r fig.align = "center", fig.height = 5, fig.width = 7, message = FALSE}
+similar_cars <- function(make, mds, nearest = 3) {
+  reduced_cols <- data.frame(mds$points) %>%
+    mutate(make = Cars93$Make)
+  center <- apply(select(reduced_cols, 1, 2), MARGIN = 2, mean)
+  make_point <- filter(reduced_cols, make == name)
+  distances <- reduced_cols %>% 
+    mutate(dist_from_make = ((X1 - make_point$X1)^2 + (X2 - make_point$X2)^2)) %>%
+    arrange(dist_from_make)
+  nns <- head(distances, nearest + 1)
+  ggplot(nns) + 
+    geom_text(mapping = aes(x = X1, y = X2, label = make)) + 
+    coord_cartesian(xlim = c(make_point$X1-0.5, make_point$X1+0.5),
+                    ylim = c(make_point$X2-0.4, make_point$X2+0.4))
+  
+}
+name <- "Audi 100"
+mds_object <- sammon(daisy(Cars93), k = 2)
+similar_cars(name, mds_object, nearest = 13)
+```
+
+### What if I wanted to see how the columns are related? 
+
+```{r fig.align = "center", fig.height = 5, fig.width = 8, message = FALSE}
+reduced_rows <- as.data.frame(select(Cars93, !where(is.factor)) %>%
+                                cor(use = "pair"))
+reduced_rows <- data.frame(sammon(as.dist((1-reduced_rows)/2), k = 2)$points)
+reduced_rows <- mutate(reduced_rows, var_name = rownames(reduced_rows)) %>%
+  rename(Var1 = X1, Var2 = X2)
+ggplot(reduced_rows) +
+  geom_text(mapping = aes(x = Var1, y = Var2, label = var_name))
+```
+
+
+
+
