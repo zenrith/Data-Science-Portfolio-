@@ -13,7 +13,7 @@ Hope you can take something away from them!
 - [Fake News Detection](https://github.com/zenrith/Data-Science-Portfolio-/tree/main/Fake%20News%20Detection): In a modernizing society that rapidly generates content online, can we accurately tell fake from true news apart? This was a project from my school's Machine Learning class, NUS CS3244. My partner and I was in charge of doing the preparation / cleaning / modelling of data. Personally, I handled the modelling that involved TFIDF vectorization, while my partner did modelling that involved Word2Vec. 
   - Text Classification
 - [Cats And Dogs](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Cats%20And%20Dogs/Cats%20And%20Dogs.ipynb): One of the first few image classification models I made for an old Kaggle Challenge. Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes.
-  - Image Classification
+  - Binary image Classification
 - [Horses vs Humans](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Horses%20vs%20Humans/Horses%20vs%20Humans.ipynb): My first transfer learning project! Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes.
   - Transfer Learning
 - [Hand Signs](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Hand%20signs/Hand%20Signs.ipynb): Automatically distinguish handsigns from one another. Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes.
