@@ -13,11 +13,11 @@ Hope you can take something away from them!
 
 ## Analytics
 - [Suicide And Economy](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Suicide%20And%20Economy/Suicide%20And%20Economy.ipynb): All societies have different problems. When things go wrong, some people end it for themselves. How does this phenomenon vary from society to society? FYI this was the first project I did so it might look a little rougher than the other projects
-  - Python, EDA, Linear regression
+  - Python, Linear regression
 - [Carousell Analytics](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Carousell%20Analytics/Carousell%20Analytics.ipynb): Ever wondered how Carousell is performing at a certain point in time? How would we know without a dataset? We create our own!
-  - Python, EDA, Web scraping, Regression  
+  - Python, Web scraping, Regression  
 - [Retail Trends](https://rpubs.com/zenrith/Retail_Trends): Can we see how a particular retail company is doing across the globe? The dataset is from my Data Visualization class. The analyses presented are a mix of what I've done in class and an addition of my take on exploring the data.
-  - R, EDA
+  - R
 - [Cars Correlation](https://rpubs.com/zenrith/Cars_Correlation): If I wanted a car that was out of stock at the moment, could I find the next best alternative without knowing how to judge a car? 
   - R, Dimensionality reduction
 
