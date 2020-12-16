@@ -14,6 +14,9 @@ Hope you can take something away from them!
   - Techniques: Text processing, Text Classification
 - [Cats And Dogs](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Cats%20And%20Dogs/Cats%20And%20Dogs.ipynb): One of the first few image classification models I made for an old Kaggle Challenge. Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes!
   - Techniques: Deep Neural Networks, Image Classification, Folder processing
+- [Horses vs Humans]()
+- [Hand Signs](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Hand%20signs/Hand%20Signs.ipynb): Automatically distinguish handsigns from one another.
+  - Techniques: Multiclass image classification
 
 ## R 
 - [Retail Trends](https://rpubs.com/zenrith/Retail_Trends): Can we see how a particular retail company is doing across the globe? The dataset is from my Data Visualization class. The analyses presented are a mix of what I've done in class and an addition of my take on exploring the data.
