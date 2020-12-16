@@ -13,7 +13,7 @@ Hope you can take something away from them!
 - [Fake News Detection](https://github.com/zenrith/Data-Science-Portfolio-/tree/main/Fake%20News%20Detection): In a modernizing society that rapidly generates content online, can we accurately tell fake from true news apart? This was a project from my school's Machine Learning class, NUS CS3244. My partner and I was in charge of doing the preparation / cleaning / modelling of data. Personally, I handled the modelling that involved TFIDF vectorization, while my partner did modelling that involved Word2Vec. 
   - Techniques: Text processing, Text Classification
 - [Cats And Dogs](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Cats%20And%20Dogs/Cats%20And%20Dogs.ipynb): One of the first few image classification models I've made for an old Kaggle Challenge. Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes!
-  - Techniques: Deep Neural Networks, Image Classification
+  - Techniques: Deep Neural Networks, Image Classification, Folder processing
 
 ## R 
 - [Retail Trends](https://rpubs.com/zenrith/Retail_Trends): Can we see how a particular retail company is doing across the globe? The dataset is from my Data Visualization class. The analyses presented are a mix of what I've done in class and an addition of my take on exploring the data.
