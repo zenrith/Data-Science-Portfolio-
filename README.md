@@ -2,8 +2,11 @@
 A repository containing all my personal data science projects. You can find the Python .ipynb notebooks and R .Rmd files here. You may also visit [here](https://rpubs.com/zenrith) for my R projects.
 
 They're a variety of Exploratory Data Analysis (EDA) and Machine Learning Projects. I'll indicate the type of project I'm doing under each link below.
+
 Under Analytics, you can find my EDA projects which usually refers to me doing Data Cleaning, Preprocessing, Manipulation, Visualization to answer some of my questions. They may be conducted in either Python / R / both. 
+
 Under Machine Learning, you can explore my work that involves building models to tackle different problems! They're performed in Python.
+
 Under each project, I've tagged the type of work that's been done so that'll help with picking what you'd like to see.
 
 Hope you can take something away from them!
