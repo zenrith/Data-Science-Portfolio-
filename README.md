@@ -25,6 +25,6 @@ Hope you can take something away from them!
 - [Cats And Dogs](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Cats%20And%20Dogs/Cats%20And%20Dogs.ipynb): One of the first few image classification models I made for an old Kaggle Challenge. Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes.
   - Binary image Classification
 - [Horses vs Humans](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Horses%20vs%20Humans/Horses%20vs%20Humans.ipynb): My first transfer learning project! Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes.
-  - Transfer Learning
+  - Transfer Learning, Binary image classification
 - [Hand Signs](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Hand%20signs/Hand%20Signs.ipynb): Automatically distinguish handsigns from one another. Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes.
   - Multiclass image classification
