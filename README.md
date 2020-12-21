@@ -28,5 +28,5 @@ Hope you can take something away from them!
 - [Hand Signs](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Hand%20signs/Hand%20Signs.ipynb): Automatically distinguish handsigns from one another. Credits to [DeepLearningAI's CNN in TensorFlow course](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow) for teaching me the ropes.
   - Multiclass image classification
 - [Temperatures In Australia](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Temperatures%20In%20Australia/Temperatures%20in%20Australia.ipynb): Predicting for temperatures. My first time series project :). Credits to [DeepLearningAI's Sequences and Time Series course](https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction) for teaching me the ropes!
- - Time Series prediction
+  - Time Series prediction
 
