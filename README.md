@@ -16,7 +16,10 @@ Hope you can take something away from them!
 - [Cars Correlation](https://rpubs.com/zenrith/Cars_Correlation): If I wanted a car that was out of stock at the moment, could I find the next best alternative without knowing how to judge a car? 
   - R, Dimensionality reduction
 - [lovoo EDA](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/lovoo%20EDA/lovoo_eda.ipynb): The romantically themed EDA that landed me my first internship. The goal was to explore the data and find out why some dating profiles possessed more likes than others. 
-
+- [STD in the US] 
+  -  Storyboard (https://public.tableau.com/app/profile/jeffrey7529/viz/STDintheUSstory/Story1)
+  -  Dashboard (https://public.tableau.com/app/profile/jeffrey7529/viz/STDintheUSdashboard_16241118956390/STDcasesintheUS)
+  -  A storyboard and dashboard on the STD situtation in the US based on a dataset. This was my final project for the [Data Visualisation With Tableau] course by UCDavis.
 
 ## Machine Learning  
 ###### Here you can explore my work that involves building models to tackle different problems! They're performed in Python.
@@ -32,4 +35,3 @@ Hope you can take something away from them!
   - Multiclass image classification
 - [Temperatures In Australia](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Temperatures%20In%20Australia/Temperatures%20in%20Australia.ipynb): Predicting for temperatures. My first time series project :). Credits to [DeepLearningAI's Sequences and Time Series course](https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction) for teaching me the ropes!
   - Time Series prediction
-
