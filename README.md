@@ -21,6 +21,11 @@ Hope you can take something away from them!
 
 ## Machine Learning  
 ###### Here you can explore my work that involves building models to tackle different problems! They're performed in Python.
+- In the [ames regression project](https://github.com/zenrith/ames-regression), I : 
+    - Developed a regression model for the ames dataset. The model ranked around top 20% on the Kaggle leaderboard
+    - Packaged and published the developed model on Pypi
+    - Built an API to use the model as a service
+    - Automated my building and testing with continuous integration
 - [Fake News Detection](https://github.com/zenrith/Data-Science-Portfolio-/tree/main/Fake%20News%20Detection): In a modernizing society that rapidly generates content online, can we accurately tell fake from true news apart? This was a project from my school's Machine Learning class, NUS CS3244. My partner and I was in charge of doing the preparation / cleaning / modelling of data. Personally, I handled the modelling that involved TFIDF vectorization, while my partner did modelling that involved Word2Vec. 
   - EDA, Text Classification
 - [High Dimensional Dataset Project](https://github.com/zenrith/Data-Science-Portfolio-/blob/main/Class%20Project%20-%20High%20Dimensional%20Dataset%20Regression/Report.pdf): What do we do when dimensions become very large? The curse of dimensionality inhibits model performance. However, we can deal with that problem using modified algorithms that mitigate this problem! This is a class project that deals with high dimensional data
